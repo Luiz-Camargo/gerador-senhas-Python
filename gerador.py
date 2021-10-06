@@ -1,5 +1,6 @@
 import random
 import PySimpleGUI as sg #FAZER TELAS
+import time
 
 # GERADOR DE SENHAS
 
@@ -15,3 +16,5 @@ nmrsenhas = input("Informe o número de senhas que deve ser gerada:")
 for senha in range(int(nmrsenhas)):
     senha = random.sample(varjuntas, int(tamanho))
     print("".join(senha))
+
+    time.sleep(1)
